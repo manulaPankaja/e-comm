@@ -38,6 +38,19 @@
     .slider-text{
         background-color: #0000009e !important;
     }
+
+    .trending-image{
+        height: 100px;
+    }
+
+    .trending-wrapper{
+        margin: 30px;
+    }
+
+    .trending-item{
+        float: left;
+        width: 20%;
+    }
 </style>
 
 </html>
