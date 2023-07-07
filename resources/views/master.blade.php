@@ -51,6 +51,15 @@
         float: left;
         width: 20%;
     }
+
+    .detail-img{
+        height: 200px;
+    }
+
+    .custom-details{
+        height: 630px;
+        padding-top: 20px;
+    }
 </style>
 
 </html>
