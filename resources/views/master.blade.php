@@ -60,6 +60,16 @@
         height: 630px;
         padding-top: 20px;
     }
+
+    .search-box{
+        width: 500px;
+    }
+
+    .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
 
 </html>

@@ -19,6 +19,13 @@ class ProductController extends Controller
         return view('detail', ['product' => $data]);
     }
 
+    function search(Request $req)
+    {
+        //return $req->input();
+        $data = Product::where('name', 'like', '%' . $req->input('query') . '%')->get();
+        return view('search', ['products' => $data]);
+    }
+
     function addToCart(Request $req)
     {
         if ($req->session()->has('user')) {
