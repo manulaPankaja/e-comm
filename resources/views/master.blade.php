@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Wmart</title>
+    <title>E-Comm</title>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -35,33 +35,33 @@
         height: 400px !important;
     }
 
-    .slider-text{
+    .slider-text {
         background-color: #0000009e !important;
     }
 
-    .trending-image{
+    .trending-image {
         height: 100px;
     }
 
-    .trending-wrapper{
+    .trending-wrapper {
         margin: 30px;
     }
 
-    .trending-item{
+    .trending-item {
         float: left;
         width: 20%;
     }
 
-    .detail-img{
+    .detail-img {
         height: 200px;
     }
 
-    .custom-details{
+    .custom-details {
         height: 630px;
         padding-top: 20px;
     }
 
-    .search-box{
+    .search-box {
         width: 500px;
     }
 
