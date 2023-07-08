@@ -25,10 +25,11 @@
             </table>
 
             <div>
-                <form action="/action_page.php">
-
+                <form action="/orderplace" method="POST">
+                    @csrf
                     <div class="form-floating mb-5 mt-5">
-                        <textarea class="form-control" placeholder="Enter your address" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <textarea class="form-control" placeholder="Enter your address" id="floatingTextarea2" style="height: 100px"
+                            name="address"></textarea>
                         <label for="floatingTextarea2">Enter your address</label>
                     </div>
 
@@ -37,20 +38,20 @@
                     </div>
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault1" value="cash">
                         <label class="form-check-label" for="flexRadioDefault1">
                             Online Payment
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault2" value="cash"
                             checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                             EMI Payment
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        <input class="form-check-input" type="radio" name="payment" id="flexRadioDefault2" value="cash"
                             checked>
                         <label class="form-check-label" for="flexRadioDefault2">
                             Cash On Delivery
@@ -60,7 +61,7 @@
                     <div class="mt-5">
 
                     </div>
-                    <button type="button" class="btn btn-success">Order Now</button>
+                    <button type="submit" class="btn btn-success">Order Now</button>
                 </form>
             </div>
         </div>
