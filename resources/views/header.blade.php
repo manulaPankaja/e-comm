@@ -31,10 +31,10 @@ if (Session::has('user')) {
             </ul>
 
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="/cartlist">Cart({{ $total }})</a>
-                </li>
                 @if (Session::has('user'))
+                    <li class="nav-item">
+                        <a class="nav-link" href="/cartlist">Cart({{ $total }})</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -47,6 +47,9 @@ if (Session::has('user')) {
                 @else
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="/register">Register</a>
                     </li>
                 @endif
             </ul>
