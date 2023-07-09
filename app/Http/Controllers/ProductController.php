@@ -95,7 +95,7 @@ class ProductController extends Controller
             cart::where('user_id', $userId)->delete(); // deleting the order from cart
         }
         //return $req->input();
-        return redirect('/');
+        return redirect('/login');
     }
 
     function myOrders()
