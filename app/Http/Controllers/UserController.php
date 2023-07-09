@@ -28,6 +28,6 @@ class UserController extends Controller
         $user->email = $req->email;
         $user->password = Hash::make($req->password);
         $user->save();
-        return redirect('/login');
+        return redirect('/');
     }
 }
